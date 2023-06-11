@@ -236,8 +236,4 @@ public class RS_vEB implements VEBi<Integer> {
         delete(min);
         return minElement;
     }
-
-    public void traverse()  {
-
-    }
 }
