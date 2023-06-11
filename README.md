@@ -1,8 +1,4 @@
 # Dijkstra-vEBT
-An optimized variant of Dijkstra's algorithm using van Emde Boas Tree
-
-# Java Implementation of Dijkstra's Algorithm with Different Priority Queues
-
 This repository contains a Java implementation of Dijkstra's algorithm, a popular graph traversal algorithm for finding the shortest path between nodes in a graph. The implementation provides support for different priority queues, including an unsorted array, a min heap, a Fibonacci heap, and a van Emde Boas tree. It also includes a visualization of the algorithm using the Processing library.
 
 ## Contents
@@ -35,7 +31,7 @@ To use the Dijkstra's algorithm implementation, follow these steps:
 1: Min-heap
 2: Fibonacci heap
 3: RS-vEB
-4. Print the shortest path from the source to the destination using the printPath method, specifying the destination vertex and the maximum path length.
+4. Print the shortest path from the source to the destination using the printPath method, specifying the destination vertex.
 The following code snippet demonstrates the usage:
 
 ```java
@@ -48,10 +44,10 @@ The following code snippet demonstrates the usage:
 ## Priority Queue Options
 This implementation of Dijkstra's algorithm provides four different priority queue options for vertex selection:
 
-Unsorted Array: The priority queue is implemented using an unsorted array, resulting in a time complexity of O(n) for each extraction of the minimum element.<br>
-Min Heap: The priority queue is implemented using a min heap, offering a time complexity of O(log n) for each extraction of the minimum element.<br>
-Fibonacci Heap: The priority queue is implemented using a Fibonacci heap, providing an amortized time complexity of O(1) for each extraction of the minimum element.<br>
-van Emde Boas Tree: The priority queue is implemented using a van Emde Boas tree, which achieves a time complexity of O(log log C) for each extraction of the minimum element, where C is the maximum weight in the graph. <br>
+Unsorted Array: The priority queue is implemented using an unsorted array, resulting in a time complexity of O(V) for each extraction of the minimum element.<br>
+Min Heap: The priority queue is implemented using a min heap, offering a time complexity of O(log V) for each extraction of the minimum element.<br>
+Fibonacci Heap: The priority queue is implemented using a Fibonacci heap, providing an amortized time complexity of O(log V) for each extraction of the minimum element.<br>
+van Emde Boas Tree: The priority queue is implemented using a van Emde Boas tree, which achieves a time complexity of O(log log C) for each extraction of the minimum element, where C is the maximum edge weight in the graph. <br>
 You can select the desired priority queue by modifying the code in the Graph class constructor.
 
 <p align="center">
@@ -88,12 +84,14 @@ The following measurements are the average running time of 30 runs, performed on
   </a>
 </p>
 
+This project includes a visualization of Dijkstra's algorithm using the Java Processing library. The visualization is provided as a JAR file. To run the visualization, follow these steps:
 
-This project includes a visualization of Dijkstra's algorithm using the Java Processing library. The visualization is provided as a JAR file. To run the visualization, follow these steps: 
+1. Make sure you have Java and Gradle installed on your system.
+2. Open a terminal or command prompt and navigate to the project directory.
+3. Build the JAR file by running the following Gradle command: ```gradle build```
+4. Once the build is successful, you can find the generated JAR file in the `build/libs/` directory of your project.
+5. Run the JAR file using the following command: ```java -jar build/libs/dijkstra-visualization.jar```
 
-1. Make sure you have Java installed on your system.
-2. Run the JAR file:
-``` java -jar dijkstra-visualization.jar ```
 The visualization will open in a new window.
 
 Use the mouse to interact with the visualization:
@@ -101,4 +99,4 @@ Use the mouse to interact with the visualization:
 1. To generate a new graph, select the number of nodes and density and click on 'generate graph'.
 2. Click on a vertex to set it as the source vertex.
 3. Click on another vertex to set it as the destination vertex.
-4. Click on the find shortest path button to run the visualization.
+4. Click on the 'find shortest path' button to run the visualization.
