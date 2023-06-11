@@ -1,6 +1,4 @@
 # Dijkstra-vEBT
-An Optimized Variant of Dijkstra's algorithm using van Emde Boas Tree
-# Dijkstra-vEBT
 An optimized variant of Dijkstra's algorithm using van Emde Boas Tree
 
 # Java Implementation of Dijkstra's Algorithm with Different Priority Queues
@@ -85,10 +83,12 @@ The following measurements are the average running time of 30 runs, performed on
 ## Visualization
 
 <p align="center">
-  <a href="https://freeimage.host/i/H6HGLCb">
-    <img src="https://iili.io/H6HGLCb.md.gif" alt="H6HGLCb.md.gif" border="0"></a>
+  <a href="https://gifyu.com/image/SuBJJ">
+    <img src="https://s12.gifyu.com/images/SuBJJ.gif" alt="SuBJJ.gif" />
   </a>
 </p>
+
+
 This project includes a visualization of Dijkstra's algorithm using the Java Processing library. The visualization is provided as a JAR file. To run the visualization, follow these steps: 
 
 1. Make sure you have Java installed on your system.
