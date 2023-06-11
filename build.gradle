@@ -18,6 +18,7 @@ dependencies {
 }
 
 jar {
+    archiveName = 'dijkstra-visualization.jar'
     manifest {
         attributes 'Main-Class': 'GUI.Sketch'
     }
